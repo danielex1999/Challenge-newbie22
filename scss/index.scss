@@ -293,3 +293,199 @@ footer {
         }
     }
 }
+
+//Tablet
+@media screen and (max-width: 768px) and (min-width: 376px) {
+    body {
+        background-image: url(/starter-code/assets/bg-pattern-1.svg), url(/starter-code/assets/bg-main-tablet.png);
+        background-repeat: no-repeat;
+        background-position: 110% -12%, 70% 85%;
+    }
+
+    img#bg-pattern-1 {
+        position: absolute;
+        top: -5%;
+        right: -6%;
+        display: none;
+    }
+
+    section#main-container {
+        margin-top: 62px;
+        min-height: 1310px;
+        width: 100%;
+        padding: 0 35px;
+
+        #We-make-your-music {
+            height: 460px;
+
+            #container-music {
+                width: 73%;
+
+                h1 {
+                    margin-bottom: 0px;
+                    color: $color-quinary;
+                    font-size: 64px;
+                    line-height: 64px;
+                    letter-spacing: -0.727px;
+                }
+
+                p {
+                    margin-top: 28px;
+                    color: $color-quinary;
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+        }
+
+        #container-eq {
+            min-height: 600px;
+            border-radius: 12px;
+            background: $color-quinary;
+            position: relative;
+            z-index: 1;
+
+            img#illustration-app {
+                width: 270.206px;
+                height: 556px;
+                top: -20%;
+                left: 10%;
+            }
+
+            img#bg-pattern-2 {
+                width: 280px;
+                height: 420px;
+                top: -3%;
+                right: 26.8%;
+            }
+
+            #card-eq {
+                width: 399px;
+                height: 546px;
+                top: 28%;
+                left: 35%;
+                padding: 48px;
+
+                #description-eq {
+                    h2 {
+                        color: $color-quaternary;
+                        line-height: 40px;
+                        font-size: 32px;
+                    }
+
+                    p {
+                        color: $color-quaternary;
+                        margin-top: 22px;
+                        line-height: 28px;
+                        font-size: 18px;
+                    }
+                }
+
+                #pay-for-month {
+                    display: flex;
+
+                    h1 {
+                        color: #FCFAF9;
+                        font-size: 65px;
+                        font-weight: 700;
+                        line-height: 52px;
+                    }
+
+                    p {
+                        color: #FCFAF9;
+                        margin-left: 15px;
+                    }
+
+
+                }
+
+                #section-buttons {
+                    .ios-download {
+                        color: $color-quaternary;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -0.18px;
+                        font-family: 'IBM Plex Sans Reg';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        img {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .android-download {
+                        margin-top: 15px;
+                        color: #191826;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -0.18px;
+                        font-family: 'IBM Plex Sans Reg';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        img {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        min-height: 313px;
+        margin-top: 150px;
+        width: 100%;
+        padding: 0 35px;
+
+        #footer-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            width: auto;
+
+            p {
+                margin-top: 32px;
+                width: 366px;
+                color: #191826;
+                font-size: 16px;
+                font-family: 'IBM Plex Sans Reg';
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        #footer-right {
+            width: 100px;
+            height: 20px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+
+            svg {
+                cursor: pointer;
+                fill: #191826;
+            }
+
+            svg:hover {
+                fill: #FA7453;
+            }
+        }
+    }
+}

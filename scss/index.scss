@@ -489,3 +489,217 @@ footer {
         }
     }
 }
+
+//Mobile
+@media screen and (max-width: 375px) {
+    body {
+        background-image: url(/starter-code/assets/bg-main-mobile.png);
+        background-repeat: no-repeat;
+        background-position: 0% -220%;
+    }
+
+    img#bg-pattern-1 {
+        display: none;
+    }
+
+    section#main-container {
+        margin-top: 40px;
+        min-height: auto;
+        width: 100%;
+
+
+        #We-make-your-music {
+            height: 460px;
+            padding: 0 24px;
+
+            #container-music {
+                width: 100%;
+
+                h1 {
+                    color: #191826;
+                    font-size: 40px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 48px;
+                    letter-spacing: -0.455px;
+                }
+
+                p {
+                    color: #191826;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 26px;
+                }
+            }
+        }
+
+        #container-eq {
+            margin-top: 166px;
+            min-height: 926px;
+            border-radius: 12px;
+            background: $color-quinary;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            img#illustration-app {
+                width: 208.972px;
+                height: 430px;
+                top: -10%;
+                left: 50%;
+                transform: translate(-50%, 0%);
+                position: relative;
+            }
+
+            img#bg-pattern-2 {
+                width: 280px;
+                height: 420px;
+                top: 0%;
+                right: 10.8%;
+            }
+
+            #card-eq {
+                position: relative;
+                width: 100%;
+                height: 546px;
+                top: 0%;
+                left: 0%;
+                padding: 48px;
+
+                #description-eq {
+                    h2 {
+                        color: #FCFAF9;
+                        font-size: 32px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 40px;
+                    }
+
+                    p {
+                        color: #FCFAF9;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 28px;
+                    }
+                }
+
+                #pay-for-month {
+                    display: flex;
+
+                    h1 {
+                        color: #FCFAF9;
+                        font-size: 65px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 52px;
+                    }
+
+                    p {
+                        color: #FCFAF9;
+                        font-size: 20px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 32px;
+                        letter-spacing: -0.2px;
+                    }
+
+
+                }
+
+                #section-buttons {
+                    .ios-download {
+                        color: $color-quaternary;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -0.18px;
+                        font-family: 'IBM Plex Sans Reg';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        img {
+                            margin-right: 8px;
+                        }
+                    }
+
+                    .android-download {
+                        margin-top: 15px;
+                        color: #191826;
+                        text-align: center;
+                        font-size: 18px;
+                        font-weight: 700;
+                        line-height: 32px;
+                        letter-spacing: -0.18px;
+                        font-family: 'IBM Plex Sans Reg';
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        width: 100%;
+
+                        img {
+                            margin-right: 8px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    footer {
+        min-height: 400px;
+        width: 100%;
+        padding: 65px 35px;
+        flex-direction: column;
+        align-items: baseline;
+        justify-content: flex-start;
+        margin-top: 0px;
+
+        #footer-left {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            flex-direction: column;
+            width: 100%;
+
+            p {
+                margin-top: 32px;
+                width: 100%;
+                color: #191826;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 26px;
+
+                span {
+                    font-weight: 700;
+                }
+            }
+
+        }
+
+        #footer-right {
+            margin-top: 80px;
+            width: 100px;
+            height: 20px;
+            justify-content: space-between;
+            align-items: center;
+            display: flex;
+
+            svg {
+                cursor: pointer;
+                fill: #191826;
+            }
+
+            svg:hover {
+                fill: #FA7453;
+            }
+        }
+    }
+}
